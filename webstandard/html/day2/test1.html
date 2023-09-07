@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제목</title>
+    <style>
+        main{
+          border: 3px solid red;
+          padding: 5px;
+          margin: 10px;
+        }
+        figure{
+            margin-top: 5px;
+            margin-right: 10px;
+            margin-bottom: 15px;
+            margin-left: 20px;
+        }
+        header nav ul {
+            margin: 0;    
+            list-style-type: none;
+            padding: 0;
+        }
+        header nav ul li{
+            display: inline;
+            padding-right : 15px
+        }
+        header nav ul li::before{
+            content: "";
+            display: inline-block;
+            width: 3px; height: 5px;
+            border-top: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-bottom: 5px solid red;
+            border-left: 5px solid transparent;
+            /* background-color: red; */
+        }
+        header nav ul li:after{
+            content:"";
+            display: inline-block;
+            width: 3px; height: 5px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+ <header>헤더
+    <nav>
+        <ul>
+           <li><a href="https://www.naver.com/">메뉴1</a></li>
+           <li>메뉴2</li>
+           <li>메뉴3</li>
+           <li>메뉴4</li>
+           <li>메뉴5</li>
+        </ul>
+    </nav>
+ </header>
+ <figure>
+   <img src="" 
+   alt="그림없음"> 
+ </figure>
+ <main >
+    <section>
+        <article>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, quam distinctio! Qui dicta harum impedit. Commodi, ratione quia, corrupti, nulla natus atque veritatis totam provident quod id repellat harum enim.</article>
+        <article>기사2</article>
+        <article>기사3</article>
+    </section>
+    <section>
+        <article>기사1</article>
+        <article>기사2</article>
+        <article>기사3</article>
+    </section>
+    </main>    
+ <footer>
+    <p>Copyright <b>@울산kh정보교육원.</b> all right reserved</p>
+ </footer>
+</body>
+</html> 

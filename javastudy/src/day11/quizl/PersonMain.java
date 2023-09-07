@@ -1,0 +1,28 @@
+package day11.quizl;
+
+public class PersonMain {
+    public static void main(String[] args) {
+        Person p1 = new Person();
+
+
+        p1.setFirstName("길동");
+        p1.setLastName("홍");
+
+        String firstName = p1.getFirstName();
+        String lastName = p1.getLastName();
+        int length = p1.getLength();
+
+        System.out.println("성 :"+ lastName);
+        System.out.println("이름 : " + firstName);
+        System.out.println("이름의 글자수 : " + length);
+
+        Person p2 = new Person("홍","길서");
+        firstName = p2.getFirstName();
+        lastName = p2.getLastName();
+        length = p2.getLength();
+
+        System.out.println("성 :"+ lastName);
+        System.out.println("이름 : " + firstName);
+        System.out.println("이름의 글자수 : " + length);
+    }
+}

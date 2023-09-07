@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>충전</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* styles.css */
+    .header_container{
+        display: flex;
+  justify-content: center; /* 수평 가운데 정렬 */
+  align-items: center; /* 수직 가운데 정렬 */
+ font-weight: Bold 700;
+        
+    }
+body {
+  font-family: Arial, sans-serif;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 768px;
+  height: 800px;
+  text-align: center; /* 내부 컨텐츠를 가운데 정렬 */
+}
+
+h1 {
+    text-align: left;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[tel="number"]{
+    width: 95%;
+  padding: 20px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+select {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #dc4141;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+  margin-top: 40px;
+  bottom: 0;
+
+}
+.button-container button {
+  margin-right: 10px; /* 버튼 간격을 조절하는 마진 값 */
+}
+
+button:hover {
+  background-color: #dc4141;
+}
+</style>
+<body>
+    <div class="header_container">
+        <div class="left_contents">
+                <h1 class="logo_text" >여백</h1>
+            </div>
+    </div>
+<div class="container">
+    <h1 class="left-align">충전하기</h1>
+  <form id="paymentForm">
+    <label for="amount">충전 금액</label>
+    <input tel="number" id="amount" name="amount" placeholder="충전할 금액을 입력하세요." required>
+    <label for="paymentMethod">출금 계좌</label>
+    <select id="paymentMethod" name="paymentMethod">
+      <option value="creditCard">선택한 계좌가 없습니다</option>
+      <option value="bankTransfer">농협 : 948217354</option>
+    </select>
+  </form>
+  <div class="button-container">
+    <button type="submit">충전하기</button>
+    <button type="submit">취소</button>
+  </div>
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>

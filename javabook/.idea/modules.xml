@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/chap01_basicsyntax-master/chap01_basicsyntax-master.iml" filepath="$PROJECT_DIR$/chap01_basicsyntax-master/chap01_basicsyntax-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chap02_datatypeandprimarydatatype-master/chap02_datatypeandprimarydatatype-master.iml" filepath="$PROJECT_DIR$/chap02_datatypeandprimarydatatype-master/chap02_datatypeandprimarydatatype-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chap03_operators-master/chap03_operators-master.iml" filepath="$PROJECT_DIR$/chap03_operators-master/chap03_operators-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chap04_controlstatement-master/chap04_controlstatement-master.iml" filepath="$PROJECT_DIR$/chap04_controlstatement-master/chap04_controlstatement-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chap05_referencedatatype-master/chap05_referencedatatype-master.iml" filepath="$PROJECT_DIR$/chap05_referencedatatype-master/chap05_referencedatatype-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chap07_internalcomponents-master/chap07_internalcomponents-master.iml" filepath="$PROJECT_DIR$/chap07_internalcomponents-master/chap07_internalcomponents-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chap08_externalcomponents-master/chap08_externalcomponents-master.iml" filepath="$PROJECT_DIR$/chap08_externalcomponents-master/chap08_externalcomponents-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chap09_modifier_1-master/chap09_modifier_1-master.iml" filepath="$PROJECT_DIR$/chap09_modifier_1-master/chap09_modifier_1-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chap10_inheritancepolymorphism-master/chap10_inheritancepolymorphism-master.iml" filepath="$PROJECT_DIR$/chap10_inheritancepolymorphism-master/chap10_inheritancepolymorphism-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chap11_modifier_2-master/chap11_modifier_2-master.iml" filepath="$PROJECT_DIR$/chap11_modifier_2-master/chap11_modifier_2-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chap12_abstractclassinterface-master/chap12_abstractclassinterface-master.iml" filepath="$PROJECT_DIR$/chap12_abstractclassinterface-master/chap12_abstractclassinterface-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chap13_innerclassandinnerinterface-master/chap13_innerclassandinnerinterface-master.iml" filepath="$PROJECT_DIR$/chap13_innerclassandinnerinterface-master/chap13_innerclassandinnerinterface-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chap14_exceptionhandling-master/chap14_exceptionhandling-master.iml" filepath="$PROJECT_DIR$/chap14_exceptionhandling-master/chap14_exceptionhandling-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chap15_thread-master/chap15_thread-master.iml" filepath="$PROJECT_DIR$/chap15_thread-master/chap15_thread-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chap16_generic-master/chap16_generic-master.iml" filepath="$PROJECT_DIR$/chap16_generic-master/chap16_generic-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chap17_collectionframework-master/chap17_collectionframework-master.iml" filepath="$PROJECT_DIR$/chap17_collectionframework-master/chap17_collectionframework-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chap18_lambdaexpression-master/chap18_lambdaexpression-master.iml" filepath="$PROJECT_DIR$/chap18_lambdaexpression-master/chap18_lambdaexpression-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chap19_javaio-master/chap19_javaio-master.iml" filepath="$PROJECT_DIR$/chap19_javaio-master/chap19_javaio-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/javabook.iml" filepath="$PROJECT_DIR$/.idea/javabook.iml" />
+    </modules>
+  </component>
+</project>

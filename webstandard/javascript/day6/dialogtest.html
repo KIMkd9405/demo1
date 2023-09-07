@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #dialogDelete{
+      border-radius: 10%;
+      border: none;
+      box-shadow: 10px 10px 10px 0 #ccc;
+      background-color: aliceblue;
+    }
+    </style>
+</head>
+<body>
+  <button class="btn btn-delete">삭제</button>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+     Corporis aperiam nulla minima dolores eveniet, odio illum id ipsam possimus, quaerat facilis quas ex consectetur.
+      Obcaecati dolore iure illum sint voluptates?</p>
+  
+   <dialog id="dialogDelete">
+    p삭제하시겠습니까?
+    <menu>
+      <button class="btn btn-model-delete">삭제</button>
+      <button class="btn btn-model-cancel">취소</button>
+    </menu>
+  </dialog>
+  <script>
+    const $dialogDelete = document.getElementById('dialogDelete');
+    const $btnDelete = document.querySelector('.btn-delete');
+    const h_delete = e => {
+      $dialogDelete.show();
+    }
+    $btnDelete.addEventListener('click',h_delete,false);
+
+    //모달창 삭제버튼 클릭시
+    document.querySelector('.btn-modal-delete')
+            .addEventListener('click',e=>{
+              console.log('모달-삭제버튼')
+              //삭제 로직
+              $dialogDelete.close();
+            });
+    //모달창 취소버튼 클릭시
+            document.querySelector('.btn-modal-cancel')
+            .addEventListener('click',e=>{
+              console,log('모달-취소버튼');
+              //이벤트 핸들러 내에서 this는 이벤트 타켓
+              $dialogDelete.close();
+            });
+</script>  
+</body>
+</html>

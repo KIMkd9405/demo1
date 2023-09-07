@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>채팅내역 예시</title>
+</head>
+<style>
+* {
+    /* outline: solid 1px red; */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* 헤드 여백*/
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: solid 1px black;
+
+    padding: 30px;
+}
+
+a {
+    text-decoration: none;
+}.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+.chat-item{
+    outline: solid 0.5px gray;
+}
+.chat-item1{
+    padding: 10px;
+}
+
+.chat-list {
+    outline: solid 1px gray;
+    flex: 1;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-right: 20px;
+    overflow: hidden;
+    margin-top: 20px;
+    height: 800px;
+}
+
+.chat-history {
+    flex: 2;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.list-section {
+    margin-bottom: 20px;
+}
+
+.wrap {
+    background-color: #A8C0D6;
+    height: 780px;
+    display: flex;
+    flex-direction: column; /* 세로 방향으로 요소를 배치 */
+    justify-content: space-between;
+}
+.wrap h3 {
+    text-align: center;
+    margin-top: 10px; 
+    font-size: 14px;
+}
+
+.wrap .chat {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.wrap .chat .icon {
+    position: relative;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #eee;
+}
+
+.wrap .chat .icon i {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    font-size: 2.5rem;
+    color: #aaa;
+    transform: translateX(-50%);
+}
+
+.wrap .chat .textbox {
+    position: relative;
+    display: inline-block;
+    max-width: calc(100% - 70px);
+    padding: 10px;
+    margin-top: 7px;
+    font-size: 13px;
+    border-radius: 10px;
+
+}
+
+.wrap .chat .textbox::before {
+    position: absolute;
+    display: block;
+    top: 0;
+    font-size: 1.5rem;
+}
+
+.wrap .ch1 .textbox {
+    margin-left: 20px;
+    background-color: #ddd;
+}
+
+.wrap .ch1 .textbox::before {
+    left: -15px;
+    content: "◀";
+    color: #ddd;
+}
+
+.wrap .ch2 {
+    flex-direction: row-reverse;
+}
+
+.wrap .ch2 .textbox {
+    margin-right: 20px;
+    background-color: #dc4141;
+    color: white;
+}
+
+.wrap .ch2 .textbox::before {
+    right: -15px;
+    content: "▶";
+    color: #dc4141;
+    }
+
+.wrap .chat-input{
+    display: flex;
+    justify-content: flex-end;
+    bottom: 0;
+    width: 100%;
+}  
+.wrap .send-button{
+    display: flex;
+    padding: 10px;
+    background-color: gray;
+    color: white;
+    white-space: nowrap;
+}
+</style>
+<body>
+    <!-- 헤드 -->
+    <div class="header">여백</div>
+   
+    <div class="container">
+        <!-- 채팅 목록 -->
+        <div class="chat-list">
+            <div class="list-section">
+                <div class="chat-item1">
+                    채팅내역
+                </div>
+
+                <div class="chat-item">
+                    <img src="avatar1.jpg" alt="채소" class="avatar">
+                    <div class="chat-details">
+                        <div class="chat-title">하늘색 셔츠 팝니다.</div>
+                        <div class="last-message">그러면 18시 롯데마트 앞에서 뵙겠습니다.</div>
+                    </div>
+                </div>
+                <div class="chat-item">
+                    <img src="avatar2.jpg" alt="과일" class="avatar">
+                    <div class="chat-details">
+                        <div class="chat-title">검은정장 대여 합니다.</div>
+                        <div class="last-message">8/29일 17시 시청앞 가능한가요?</div>
+                    </div>
+                </div>
+                <div class="chat-item">
+                    <img src="avatar3.jpg" alt="햄버거" class="avatar">
+                    <div class="chat-details">
+                        <div class="chat-title">하늘색 셔츠 팝니다.</div>
+                        <div class="last-message">시간이 안맞아서 힘들겠네요.</div>
+                    </div>
+                </div>
+                <!-- 추가적인 채팅 아이템들을 여기에 추가할 수 있습니다. -->
+            </div>
+        </div>
+
+        <!-- 채팅 내역 -->
+        <div class="chat-history">
+            <div class="wrap">
+                <h3><2023년 8월 22일></h3>
+                <div class="chat ch2">
+                    <div class="icon"><i class="fa-solid fa-user"></i></div>
+                    <div class="textbox">안녕하세요.
+                        아직 대여한게 아니라면 26일부터 3일간 대여하고 싶습니다.</div>
+                </div>
+                <div class="chat ch1">
+                    <div class="icon"><i class="fa-solid fa-user"></i></div>
+                    <div class="textbox">네, 대여 가능합니다.
+                        15일 언제 어느 시간에 가능하신가요?</div>
+                </div>
+                <div class="chat ch2">
+                    <div class="icon"><i class="fa-solid fa-user"></i></div>
+                    <div class="textbox">16시부터라면 언제든 가능합니다</div>
+                </div>
+                <div class="chat ch1">
+                    <div class="icon"><i class="fa-solid fa-user"></i></div>
+                    <div class="textbox">
+                        그러면 18시 롯데마트 앞에서 뵙겠습니다.</div>
+                </div>
+                <div class="chat-input">
+                    <input type="text" class="chat-input" placeholder="메세지를 입력하세요...">
+                    <buton class="send-button">전송</buton>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+s
+
+
+
+
+
+
+
+</html>

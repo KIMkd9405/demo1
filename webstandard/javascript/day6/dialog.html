@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 간단한 양식을 포함한 팝업 대화 상자 -->
+<dialog id="favDialog" >
+    <form method="dialog">
+      <p>
+        <label
+          >좋아하는 동물:
+          <select>
+            <option></option>
+            <option>아르테미아</option>
+            <option>레서판다</option>
+            <option>거미원숭이</option>
+          </select>
+        </label>
+      </p>
+      <menu>
+        <button value="cancel">취소</button>
+        <button id="confirmBtn" value="default">확인</button>
+      </menu>
+    </form>
+  </dialog>
+  
+  <menu>
+    <button id="updateDetails">상세정보 업데이트</button>
+  </menu>
+  
+  <output aria-live="polite"></output>
+</body>
+</html>

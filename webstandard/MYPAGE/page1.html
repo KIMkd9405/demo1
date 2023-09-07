@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(가)프로필수정</title>
+    <script
+    src="https://kit.fontawesome.com/af69a3abe6.js"
+    crossorigin="anonymous"
+></script>
+<link rel="stylesheet" href="./font.css">
+    <style>
+        *{
+            outline: solid 1px none;
+            
+        }
+
+        .header_container{
+            display:grid;
+            grid-template-columns: 1fr 768px 1fr;
+        }
+
+        .header_logo{
+            font-size: 16px;
+        }
+
+        h1{
+            display: inline-flex
+        }
+
+        #logo{
+            position: relative;
+            width: 50px;
+            height: 50px;
+            vertical-align: middle;
+            bottom: 8px;
+        }
+
+        .left_contents{
+        text-align: right;           
+        }
+
+        .center_contents{
+            align-self: center;
+        }
+
+        .center_contents_grid{
+            display:grid;
+            text-align: center;
+            align-content: center;
+            grid-template-columns: repeat(4,1fr);
+        }
+    
+     #content {
+    display: flex;
+    justify-content: space-evenly;
+    /* flex-direction: column; */
+    align-items: stretch;
+    height: auto; /* 화면 전체 높이에 맞게 섹션을 배치합니다 */
+    padding: 10px; /* 내용과 화면 가장자리 간의 여백 설정 */
+    box-sizing: border-box; /* 패딩이 요소의 전체 크기에 포함되도록 함 */
+}
+
+.content_dummy {
+    width: 70%; /* 원하는 너비로 조정 */
+    max-width: 1280px; /* 최대 너비 설정 */
+}
+.table.row {
+    width: 100%;
+    height: 100vh;
+}
+/* 추가 또는 수정한 스타일 */
+.foot_btn_nav {
+    text-align: center;
+    margin-top: 20px; /* 상단 여백 추가 */
+}
+
+.foot_btn_nav a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #dc4141; /* 원하는 배경색상 설정 */
+    color: white; /* 글자색을 밝게 설정 */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.foot_btn_nav a:hover {
+    background-color: #dc4141; /* 마우스 호버 시 배경색상 변경 */
+}
+.table.row th {
+    text-align: left;
+    font-size: 22px;
+    border-bottom: 1px solid black;
+}
+.table.row td{
+    outline:  1px solid black;
+}
+
+.table.row th,
+.table.row td {
+    
+    font-family: 1.1.1. Noto_Sans_Korea;
+}
+
+.table.row tr:last-child th,
+.table.row tr:last-child td {
+    border-bottom: none;
+}
+
+
+        @media screen and (max-width:768px) {
+
+        
+        }
+
+        @media screen and (min-width:769px) and (max-width:1023px){
+
+        }
+
+        @media screen and (min-width:1024px) {
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="header_container">
+
+        <div class="left_contents">
+            <div class="header_logo noto_regular_black">
+                <img id="logo" src="./옷빌리지빨강 수정.png" alt="">
+                <h1>옷 빌리지</h1>
+            </div>
+        </div>
+
+        <div class="center_contents">
+            <div class="center_contents_grid noto_regular_graywhite">
+                <p class="item item1">구매/대여</p>
+                <p class="item item3">판매/대여</p>
+                <p class="item item4">마이페이지</p>
+                <p class="item item5">고객센터</p>
+                
+            </div>
+        </div>
+        <div class="right_contents"></div>
+    </div>
+<div id="content">
+<div class="content_dummy">
+    <script>layout_top_y();</script>
+    <div id="N1" class="pc">
+        <div class="lnb"></div>
+        <h3 class="t icon"></h3>
+        <table class="table row">
+            <tbody>
+                <tr>
+                    <th scope="co1" colspan="2" class="t">
+                        <div>내 정보
+                        </div>
+                    </th>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        <div>사진</div>
+                    </th>
+                    <td class="w100">사진12</td>
+                </tr>
+                <tr style="display: none;">
+                <th scope="row">
+                </th>
+                <td></td>
+            </tr>
+            <tr>
+            <th scope="row">
+                <div>닉네임</div>
+            </th>
+            <td>옷빌리지12 </td>
+        </tr>
+        <tr>
+            <th scope="row">
+                <div>생년월일</div>
+            </th>
+            <td>1994/8/22</td>
+        </tr>
+        <tr>
+            <th scope="row">
+                <div>성별</div>
+            </th>
+            <td> 남성 </td>
+        </tr>
+        <tr>
+            <th scope="row">
+                <div>이메일</div>
+            </th>
+            <td>ulsankh@gmail.com</td>
+        </tr>
+        </tbody>
+        </table>
+        <div class="tRight foot_btn_nav">
+            <a href="#">수정하기
+            </a>
+        </div>
+    </div>
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            outline: 1px solid red;
+        }
+        .container{
+            display: grid;
+            grid-template-areas:
+            "header header header"
+            "aside_1 main aside_2"
+            "footer footer footer";
+        }
+        .container .item.item1{
+            grid-area: header;
+        }
+        .container .item.item2{
+            grid-area: aside_1;
+        }
+        .container .item.item3{
+            grid-area: main;
+        }
+        .container .item.item4{
+            grid-area: aside_2;
+        }
+        .container .item.item5{
+            grid-area: footer;
+        }
+ 
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item item1">item1</div>
+        <div class="item item2">item2</div>
+        <div class="item item3">item3</div>
+        <div class="item item4">item4</div>
+        <div class="item item5">item5</div>
+    </div>
+    
+</body>
+</html>

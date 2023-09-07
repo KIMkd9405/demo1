@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log('로직1');
+        // promise : 비동기로직을 처리하고 처리결과를 프라미스 객체에 담아 반환.
+        // callback 함수 : 
+        // resolve : 비동기로직을 성공하여 처리했을떄의 결과값을 매개값으로 받는다.
+        // reject  :  
+        console.log('로직');
+        const promise = new promise( (resolve,reject)=>{
+            //서버와의 통신 또는 시간이 오래걸리는 작업
+            //서버에서 회원정보 가져오기 fethc();
+            let result = `[{'홍길동',20},{'홍길순',30}]`;
+            let flag = true;
+            //성공일떄
+            if(true){
+                resolve(result);
+            }else{
+            //실패일때
+              reject(new Error('오류발생'));
+            }
+        } );
+
+        promise.then((result)=>{console.log('1',result);return result})
+                .finally(()=>{console.log('처리중')})
+               .then((result)=>{console.log('2',result); throw new Error('2번작업에서 오류')})
+               .then((result)=>{console.log('3',result)})
+               .catch((err)=>{console.log(err.message)})
+               .finally(()=>{console.log('종료')});
+
+
+        console.log('로직2');
+    </script>
+</body>
+</html>
